@@ -90,6 +90,8 @@ pip install -r requirements.txt
 python main.py
 
 ## Code Structure
+
+```plaintext
 TestModel/                     # Root folder for the entire project
 ├── Dockerfile                 # Containerizes all JARVIS functionalities
 ├── README.md                  # Project overview and instructions
@@ -101,6 +103,7 @@ TestModel/                     # Root folder for the entire project
 ├── main.py                    # Main Python entry point (JARVIS core)
 ├── run_app.py                 # Application startup wrapper
 │
+├── __pycache__/               # Python bytecode (auto-generated)
 │
 ├── frontend/                  # Next.js-based user interface
 │   ├── app/                   # Next.js “app” directory (app-router)
@@ -119,15 +122,6 @@ TestModel/                     # Root folder for the entire project
 │   └── tsconfig.json          # TypeScript settings
 │
 └── docker/                    # (optional) Docker-compose configs
-
-
-- The code structure if pretty simple. The code is completely modularized and is highly customizable
-- To add a new feature:
-  -  Make a new file in features folder, write the feature's function you want to include
-  - Add the function's definition to __init__.py
-  - Add the voice commands through which you want to invoke the function
-
-
 
 ## License
 This project is licensed under  2025 Code Offenderd
