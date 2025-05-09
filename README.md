@@ -5,17 +5,24 @@
     </a>
   <br />
   <div>
-    <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Appwrite-f05695?style=for-the-badge&logo=appwrite&logoColor=white">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Syncfusion-181758?style=for-the-badge&logoColor=white">
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  </div>
-  <h3 align="center">Travel Agency Platform</h3>
+  <!-- Next.js -->
+<img alt="Static Badge" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
 
-  <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+<!-- YOLO (custom badge since no official logo on shields.io) -->
+<img alt="Static Badge" src="https://img.shields.io/badge/YOLOv8-00C853?style=for-the-badge&logo=opencv&logoColor=white" />
+
+<!-- Python -->
+<img alt="Static Badge" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+
+<!-- FastAPI -->
+<img alt="Static Badge" src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+
+<!-- python-multipart (no logo, using generic Python) -->
+<img alt="Static Badge" src="https://img.shields.io/badge/python--multipart-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+
+  </div>
+  <h3 align="center">Space Station Object Detection</h3>
+
 
 ## 📋 <a name="table">Table of Contents</a>
 
@@ -27,19 +34,12 @@
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## ⚠️ Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://www.youtube.com/watch?v=xZ1ba-RLrjo" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
-A modern travel agency platform with an admin dashboard and public site. Generate AI-powered trip itineraries based on country, travel style, interests, group type, and budget — and book trips with ease.
+This project is a simulation-based object detection system designed to detect critical objects inside a space station environment. Built during a hackathon, the model is capable of identifying essential equipment under challenging conditions using computer vision and AI.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+If you're getting started and need assistance or face any bugs, join our active developers community with over Team members. It's a place where people help each other out.
 
 <a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
@@ -87,12 +87,13 @@ Make sure you have the following installed on your machine:
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
+- [python](https://www.python.org/)
 
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/travel-agency-dashboard.git
-cd travel-agency-dashboard
+git clone https://github.com/Flaxmbot/TestModel.git
+cd TestModel
 ```
 
 **Installation**
@@ -100,48 +101,20 @@ cd travel-agency-dashboard
 Install the project dependencies using npm:
 
 ```bash
-npm install
+npm install (for frontend)
+
+pip install requirements.txt (for backend model)
 ```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-VITE_SYNCFUSION_LICENSE_KEY=
-VITE_APPWRITE_PROJECT_ID=
-VITE_APPWRITE_API_ENDPOINT=
-VITE_APPWRITE_API_KEY=
-VITE_APPWRITE_DATABASE_ID=
-VITE_APPWRITE_USERS_COLLECTION_ID=
-VITE_APPWRITE_ITINERARY_COLLECTION_ID=
-STRIPE_SECRET_KEY=
-GEMINI_API_KEY=
-UNSPLASH_ACCESS_KEY="
-VITE_BASE_URL="http://localhost:5173"
-```
-
-### Replace the placeholder values with your actual credentials.
-
-- **[Syncfusion](https://jsm.dev/tourvisto-syncfusion)**
-
-- **[Appwrite](https://jsm.dev/tourvisto-appwrite)**
-
-- **[Gemini AI](https://aistudio.google.com/)**
-
-- **[Sentry](https://jsm.dev/tourvisto-sentry)**
-
-- **[Stripe](https://stripe.com/)**
-
-- **[Unsplash](https://unsplash.com/)**
 
 **Running the Project**
 
 ```bash
-npm run dev
+npm run dev  (for frontend)
+
+python main.py  (for backend model)
 ```
 
-Open [http://localhost:5173](http://localhost:5173/) in your browser to view the project.
+Open [http://localhost:3000](http://localhost:3000/) in your browser to view the project.
 
 ## <a name="snippets">🕸️ Snippets</a>
 
@@ -2015,7 +1988,7 @@ export default Dashboard
 </details>
 
 
-<!-- 
+
 ## <a name="links">🔗 Assets</a>
 
 - Assets used in the project can be found [here](https://jsm.dev/tourvisto-kit)
@@ -2025,15 +1998,14 @@ export default Dashboard
 
 ## <a name="more">🚀 More</a>
 
-**Advance your skills with Next.js Pro Course**
+**Advance your skills with Yolo Model **
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+These in-depth modules offer detailed insights, hands-on projects, and practical challenges to sharpen your computer vision skills. Master real-time detection, custom dataset training, and deployment strategies !
 
 <a href="https://jsm.dev/tourvisto-readme" target="_blank">
   <img src="public/assets/images/readme-bottom.jpg" alt="Project Banner">
 </a>
- -->
+ 
 
 
 
@@ -2050,137 +2022,6 @@ detailed explanations, cool features, and exercises to boost your skills. Give i
 
 
 
-
-
-
-
-# 🚀 Space Station Object Detection (Simulated Environment using YOLOv8)
-
-This project is a simulation-based object detection system designed to detect critical objects inside a space station environment. Built during a hackathon, the model is capable of identifying essential equipment under challenging conditions using computer vision and AI.
-
----
-
-## 🛠️ Built With
-
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/main/topics/ultralytics/ultralytics.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/main/topics/opencv/opencv.png"></code>
-
----
-
-## 🎯 Objective
-
-The primary goal was to build an AI system capable of detecting three crucial objects in a simulated space station environment using YOLOv8:
-
-- 🧰 Toolbox  
-- 🧯 Fire Extinguisher  
-- 🫙 Oxygen Tank  
-
-The system should be robust across:
-- Varying lighting conditions  
-- Occlusions and object overlap  
-- Diverse camera angles and distances  
-
----
-
-## 🧠 AI Engineering Pipeline
-
-### 🔹 Dataset  
-- Generated using **FalconEditor** simulating a space station environment.  
-- Labeled data for the three objects across multiple frames and lighting scenarios.
-
-### 🔹 Model  
-- YOLOv8 trained from scratch and fine-tuned on the custom dataset.  
-- Optimized for accuracy and fast inference.
-
-### 🔹 Training Details  
-- Framework: **Ultralytics YOLOv8**  
-- Trained on high-resolution annotated images  
-- Tuned: Batch size, epochs, augmentation, learning rate
-
----
-
-## 🌟 Features
-
-This AI assistant includes additional features:
-- Greet user
-- Tell current time and date
-- Launch applications/software
-- Open any website
-- Weather updates for any city
-- Location and distance detection
-- System status (RAM, CPU, battery)
-- Google Calendar events
-- Wikipedia person lookup
-- Google search
-- Play music from YouTube
-- Top news headlines
-- Send emails
-- Math calculation (via WolframAlpha)
-- Take notes
-- Tell a joke
-- IP address info
-- Window switcher
-- Screenshot functionality
-- Hide/unhide folder contents
-- Graphical User Interface
-
----
-
-
-## Installation
-# Clone the repo
-git clone <https://github.com/Flaxmbot/TestModel.git>
-cd TestModel
-
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python main.py
-
-## Code Structure
-
-```plaintext
-TestModel/                     # Root folder for the entire project
-├── Dockerfile                 # Containerizes all JARVIS functionalities
-├── README.md                  # Project overview and instructions
-├── render.yaml                # Deployment configuration
-├── requirements.txt           # Python dependencies
-├── package-lock.json          # Node.js dependencies lock
-├── model.pt                   # Trained YOLOv8 model weights
-├── find.py                    # Auxiliary backend script
-├── main.py                    # Main Python entry point (JARVIS core)
-├── run_app.py                 # Application startup wrapper
-│
-├── __pycache__/               # Python bytecode (auto-generated)
-│
-├── frontend/                  # Next.js-based user interface
-│   ├── app/                   # Next.js “app” directory (app-router)
-│   │   ├── layout.tsx         # Global layout (HTML shell)
-│   │   ├── page.tsx           # Main entry page
-│   │   ├── globals.css        # Global styles
-│   │   └── Warning.tsx        # Example UI component
-│   │
-│   ├── components/            # Reusable React components
-│   ├── hooks/                 # Custom React hooks
-│   ├── lib/                   # Shared utility functions
-│   ├── public/                # Static assets (icons, images)
-│   ├── styles/                # Tailwind & custom CSS modules
-│   ├── next.config.mjs        # Next.js configuration
-│   ├── tailwind.config.ts     # Tailwind CSS configuration
-│   └── tsconfig.json          # TypeScript settings
-│
-└── docker/                    # (optional) Docker-compose configs
-
-## License
-This project is licensed under  2025 Code Offenderd
-
-## Future Improvements
-- Generalized conversations can be made possible by incorporating Natural Language Processing
-- GUI can be made more nicer to look at and functional
-- More functionalities can be added
 
 
 
