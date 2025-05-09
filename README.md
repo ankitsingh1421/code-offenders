@@ -1,12 +1,12 @@
 <div align="center">
   <br />
-    <a href="" target="_blank">
+    <a href="https://github.com/Flaxmbot/TestModel.git" target="_blank">
       <img src="public/assets/images/readme.png" alt="Project Banner">
     </a>
   <br />
   <div>
-    <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=nextjs&logoColor=white">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Appwrite-f05695?style=for-the-badge&logo=python&logoColor=white">
+    <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Appwrite-f05695?style=for-the-badge&logo=appwrite&logoColor=white">
     <img alt="Static Badge" src="https://img.shields.io/badge/Syncfusion-181758?style=for-the-badge&logoColor=white">
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   </div>
@@ -2015,7 +2015,7 @@ export default Dashboard
 </details>
 
 
-
+<!-- 
 ## <a name="links">🔗 Assets</a>
 
 - Assets used in the project can be found [here](https://jsm.dev/tourvisto-kit)
@@ -2033,6 +2033,7 @@ detailed explanations, cool features, and exercises to boost your skills. Give i
 <a href="https://jsm.dev/tourvisto-readme" target="_blank">
   <img src="public/assets/images/readme-bottom.jpg" alt="Project Banner">
 </a>
+ -->
 
 
 
@@ -2053,7 +2054,6 @@ detailed explanations, cool features, and exercises to boost your skills. Give i
 
 
 
-<!-- 
 # 🚀 Space Station Object Detection (Simulated Environment using YOLOv8)
 
 This project is a simulation-based object detection system designed to detect critical objects inside a space station environment. Built during a hackathon, the model is capable of identifying essential equipment under challenging conditions using computer vision and AI.
@@ -2183,4 +2183,4 @@ This project is licensed under  2025 Code Offenderd
 - More functionalities can be added
 
 
- -->
+
