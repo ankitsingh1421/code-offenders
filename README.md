@@ -71,41 +71,7 @@ This AI assistant includes additional features:
 
 ---
 
-## Features
 
-It can do a lot of cool things, some of them being:
-
-- Greet user
-- Tell current time and date
-- Launch applications/softwares 
-- Open any website
-- Tells about weather of any city
-- Open location of any place plus tells the distance between your place and queried place
-- Tells your current system status (RAM Usage, battery health, CPU usage)
-- Tells about your upcoming events (Google Calendar)
-- Tells about any person (via Wikipedia)
-- Can search anything on Google 
-- Can play any song on YouTube
-- Tells top headlines (via Times of India)
-- Plays music
-- Send email (with subject and content)
-- Calculate any mathematical expression (example: Jarvis, calculate x + 135 - 234 = 345)
-- Answer any generic question (via Wolframalpha)
-- Take important note in notepad
-- Tells a random joke
-- Tells your IP address
-- Can switch the window
-- Can take screenshot and save it with custom filename
-- Can hide all files in a folder and also make them visible again
-- Has a cool Graphical User Interface
-
-## API Keys
-To run this program you will require a bunch of API keys. Register your API key by clicking the following links
-
-- [OpenWeatherMap API](https://openweathermap.org/api)
-- [Wolframalpha](https://www.wolframalpha.com/)
-- [Google Calendar API](https://developers.google.com/calendar/auth)
-  
 ## Installation
 # Clone the repo
 git clone <your_repo_url>
@@ -124,39 +90,35 @@ pip install -r requirements.txt
 python main.py
 
 ## Code Structure
-
-
-TestModel                     # Main folder for all features
-├── Dockerfile                # All functionalities of JARVIS
-├── README.md                 # Project overview
-├── __pycache__              # Python bytecode cache
-├── find.py                  # Additional backend script
-├── main.py                  # Main Python entry point
-├── model.pt                 # Trained ML model file
-├── package-lock.json        # Backend package lock file
-├── render.yaml              # Deployment configuration
-├── requirements.txt         # Python dependencies
-├── run_app.py               # App startup script
-├── frontend                 # Frontend (Next.js) application
-│   ├── app                  # Main Next.js app directory
-│   │   ├── Warning.tsx
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── components           # UI components
-│   ├── components.json      # Components config
-│   ├── hooks                # Custom React hooks
-│   ├── lib                  # Utility libraries
-│   ├── next-env.d.ts
-│   ├── next.config.mjs      # Next.js configuration
-│   ├── node_modules
-│   ├── package.json         # Frontend dependencies
-│   ├── package-lock.json
-│   ├── pnpm-lock.yaml
-│   ├── postcss.config.mjs
-│   ├── public               # Static assets
-│   ├── styles               # Tailwind and custom styles
-│   └── tailwind.config.ts   # Tailwind CSS configuration
+TestModel/                     # Root folder for the entire project
+├── Dockerfile                 # Containerizes all JARVIS functionalities
+├── README.md                  # Project overview and instructions
+├── render.yaml                # Deployment configuration
+├── requirements.txt           # Python dependencies
+├── package-lock.json          # Node.js dependencies lock
+├── model.pt                   # Trained YOLOv8 model weights
+├── find.py                    # Auxiliary backend script
+├── main.py                    # Main Python entry point (JARVIS core)
+├── run_app.py                 # Application startup wrapper
+│
+│
+├── frontend/                  # Next.js-based user interface
+│   ├── app/                   # Next.js “app” directory (app-router)
+│   │   ├── layout.tsx         # Global layout (HTML shell)
+│   │   ├── page.tsx           # Main entry page
+│   │   ├── globals.css        # Global styles
+│   │   └── Warning.tsx        # Example UI component
+│   │
+│   ├── components/            # Reusable React components
+│   ├── hooks/                 # Custom React hooks
+│   ├── lib/                   # Shared utility functions
+│   ├── public/                # Static assets (icons, images)
+│   ├── styles/                # Tailwind & custom CSS modules
+│   ├── next.config.mjs        # Next.js configuration
+│   ├── tailwind.config.ts     # Tailwind CSS configuration
+│   └── tsconfig.json          # TypeScript settings
+│
+└── docker/                    # (optional) Docker-compose configs
 
 
 - The code structure if pretty simple. The code is completely modularized and is highly customizable
@@ -164,6 +126,7 @@ TestModel                     # Main folder for all features
   -  Make a new file in features folder, write the feature's function you want to include
   - Add the function's definition to __init__.py
   - Add the voice commands through which you want to invoke the function
+
 
 
 ## License
